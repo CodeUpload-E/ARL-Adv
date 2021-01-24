@@ -2,6 +2,8 @@
 
 Tensorflow implementations of short text clustering model [ARL-Adv](https://arxiv.org/abs/1912.03720) 
 
+Word embeddings are initialized by training word2vec model on the corpus and we initialize centroids of the clusters by performing K-means on text embeddings, where  text embeddings are obtained by averaging the embeddings of the words they contain.
+
 ARL-Adv will be published in IEEE TKDE. If you want to cite our work, please use the following information:
 
 >> Wei Zhang, Chao Dong, Jianhua Ying, Jianyong Wang  
